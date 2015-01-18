@@ -11,7 +11,9 @@ Source0:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&d
 Source1:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.24.8.0.tgz
 # Source1-md5:	6ac0a3fc936acdd2351866a7af2fe9f7
 Source2:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-%{version}.tgz
-# Source2-md5:	cfffe97083f57c50aeb030565b178aeb
+# Source2-md5:	1bccc66bd8d641c9de05c2c5846c23ee
+Source3:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-23.11.10.0.tgz
+# Source3-md5:	c59aa3f5395ccba356c2b09a38d21801
 URL:		http://www.intellinuxwireless.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,7 +45,7 @@ pakietów, zapobiegające docieraniu do komputera pakietów
 niepotrzebnych w danym trybie pracy urządzenia.
 
 %prep
-%setup -q -c -a0 -a1 -a2
+%setup -q -c -a0 -a1 -a2 -a3
 
 %install
 rm -rf $RPM_BUILD_ROOT
