@@ -6,13 +6,17 @@ Version:	25.228.9.0
 Release:	2
 License:	distributable
 Group:		Base/Kernel
-Source0:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.1.7.0.tgz
+#Source0:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.1.7.0.tgz
+Source0:	iwlwifi-7260-ucode-22.1.7.0.tgz
 # Source0-md5:	676447d12fe373d97b2db2b9849d297b
-Source1:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.24.8.0.tgz
+#Source1:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.24.8.0.tgz
+Source1:	iwlwifi-7260-ucode-22.24.8.0.tgz
 # Source1-md5:	6ac0a3fc936acdd2351866a7af2fe9f7
-Source2:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-%{version}.tgz
+#Source2:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-%{version}.tgz
+Source2:	iwlwifi-7260-ucode-%{version}.tgz
 # Source2-md5:	1bccc66bd8d641c9de05c2c5846c23ee
-Source3:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-23.11.10.0.tgz
+#Source3:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-23.11.10.0.tgz
+Source3:	iwlwifi-7260-ucode-23.11.10.0.tgz
 # Source3-md5:	c59aa3f5395ccba356c2b09a38d21801
 URL:		http://www.intellinuxwireless.org/
 BuildArch:	noarch
