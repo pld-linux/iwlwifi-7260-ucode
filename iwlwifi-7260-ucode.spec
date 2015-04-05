@@ -3,21 +3,19 @@
 Summary:	Microcode image for Intel Wireless 7260
 Name:		iwlwifi-%{_module}-ucode
 Version:	25.228.9.0
-Release:	2
+Release:	3
 License:	distributable
 Group:		Base/Kernel
-#Source0:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.1.7.0.tgz
-Source0:	iwlwifi-7260-ucode-22.1.7.0.tgz
+Source0:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-22.1.7.0.tgz
 # Source0-md5:	676447d12fe373d97b2db2b9849d297b
-#Source1:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-22.24.8.0.tgz
-Source1:	iwlwifi-7260-ucode-22.24.8.0.tgz
+Source1:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-22.24.8.0.tgz
 # Source1-md5:	6ac0a3fc936acdd2351866a7af2fe9f7
-#Source2:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-%{version}.tgz
-Source2:	iwlwifi-7260-ucode-%{version}.tgz
+Source2:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-%{version}.tgz
 # Source2-md5:	1bccc66bd8d641c9de05c2c5846c23ee
-#Source3:	http://wireless.kernel.org/en/users/Drivers/iwlwifi?action=AttachFile&do=get&target=iwlwifi-7260-ucode-23.11.10.0.tgz
-Source3:	iwlwifi-7260-ucode-23.11.10.0.tgz
-# Source3-md5:	c59aa3f5395ccba356c2b09a38d21801
+Source3:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-23.15.10.0.tgz
+# Source3-md5:	b0b5e10eefd366b5b93da00657cb173c
+Source4:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-25.16.12.0.tgz
+# Source4-md5:	3c4e83c35ceec45fe57fbddc0eacd362
 URL:		http://www.intellinuxwireless.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,7 +47,7 @@ pakietów, zapobiegające docieraniu do komputera pakietów
 niepotrzebnych w danym trybie pracy urządzenia.
 
 %prep
-%setup -q -c -a0 -a1 -a2 -a3
+%setup -q -c -a0 -a1 -a2 -a3 -a4
 
 %install
 rm -rf $RPM_BUILD_ROOT
