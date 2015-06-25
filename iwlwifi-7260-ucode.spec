@@ -2,8 +2,8 @@
 %define	_module	7260
 Summary:	Microcode image for Intel Wireless 7260
 Name:		iwlwifi-%{_module}-ucode
-Version:	25.30.13.0
-Release:	1
+Version:	25.228.9.0
+Release:	4
 License:	distributable
 Group:		Base/Kernel
 Source0:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-22.1.7.0.tgz
