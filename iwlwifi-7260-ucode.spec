@@ -3,7 +3,7 @@
 Summary:	Microcode image for Intel Wireless 7260
 Name:		iwlwifi-%{_module}-ucode
 Version:	25.228.9.0
-Release:	4
+Release:	5
 License:	distributable
 Group:		Base/Kernel
 Source0:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-22.1.7.0.tgz
@@ -18,6 +18,8 @@ Source4:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-u
 # Source4-md5:	74a0f71b1ede12a0aed3149068e87acf
 Source5:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-25.30.13.0.tgz
 # Source5-md5:	892d1de0d2b597da2238922b7f53a24e
+Source6:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-25.30.14.0.tgz
+# Source6-md5:	00be8ebbc9165469560aeef1c8a9b35d
 URL:		http://www.intellinuxwireless.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,7 +51,7 @@ pakietów, zapobiegające docieraniu do komputera pakietów
 niepotrzebnych w danym trybie pracy urządzenia.
 
 %prep
-%setup -q -c -a0 -a1 -a2 -a3 -a4 -a5
+%setup -q -c -a0 -a1 -a2 -a3 -a4 -a5 -a6
 
 %install
 rm -rf $RPM_BUILD_ROOT
