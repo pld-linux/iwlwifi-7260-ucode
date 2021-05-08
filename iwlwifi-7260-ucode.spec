@@ -1,6 +1,7 @@
 %define	_fname	7260
 %define	_module	7260
 Summary:	Microcode image for Intel Wireless 7260
+Summary(pl.UTF-8):	Obraz mikrokodu dla kart Intel Wireless 7260
 Name:		iwlwifi-%{_module}-ucode
 Version:	25.228.9.0
 Release:	7
@@ -62,13 +63,13 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/lib/firmware
 
 cp -p */iwlwifi-%{_fname}-*.ucode $RPM_BUILD_ROOT/lib/firmware
-cp -p *%{version}/*LICENSE.* $RPM_BUILD_ROOT/lib/firmware/%{name}-LICENSE
+cp -p iwlwifi-%{_fname}-ucode-%{version}/LICENSE.* $RPM_BUILD_ROOT/lib/firmware/%{name}-LICENSE
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *%{version}*/README.*
+%doc iwlwifi-%{_fname}-%{version}/README.*
 /lib/firmware/%{name}-LICENSE
-/lib/firmware/*.ucode
+/lib/firmware/iwlwifi-7260-*.ucode
