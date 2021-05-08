@@ -1,10 +1,11 @@
+# NOTE: currently it's included in linux-firmware.spec
 %define	_fname	7260
 %define	_module	7260
 Summary:	Microcode image for Intel Wireless 7260
 Summary(pl.UTF-8):	Obraz mikrokodu dla kart Intel Wireless 7260
 Name:		iwlwifi-%{_module}-ucode
 Version:	25.228.9.0
-Release:	7
+Release:	7.1
 License:	distributable
 Group:		Base/Kernel
 Source0:	https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-7260-ucode-22.1.7.0.tgz
